@@ -1,5 +1,5 @@
 
-> Open this page at [https://hongkai97.github.io/task-6b/](https://hongkai97.github.io/task-6b/)
+> Open this page at [https://hongkai97.github.io/task-6/](https://hongkai97.github.io/task-6/)
 
 ## Edit this project ![Build status badge](https://github.com/hongkai97/task-6b/workflows/MakeCode/badge.svg)
 
@@ -7,7 +7,7 @@ To edit this repository in MakeCode.
 
 * open [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * click on **Import** then click on **Import URL**
-* paste **https://github.com/hongkai97/task-6b** and click import
+* paste **https://github.com/hongkai97/task-6** and click import
 
 
 ## Blocks preview
