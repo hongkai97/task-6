@@ -1,10 +1,23 @@
-OLED.init(128, 64)
 basic.forever(function () {
-    if (Environment.ReadSoilHumidity(AnalogPin.P1) < 40) {
+    serial.writeValue("x", pins.analogReadPin(AnalogPin.P1))
+    basic.pause(500)
+    if (pins.analogReadPin(AnalogPin.P1) < 500) {
         music.setVolume(127)
         music.playMelody("C5 B A G F E D C ", 120)
-        OLED.writeStringNewLine("Please water me")
-        basic.pause(5000)
-        OLED.clear()
+        basic.showLeds(`
+            . # . # .
+            . # . # .
+            . . . . .
+            . # # # .
+            # . . . #
+            `)
+    } else {
+        basic.showLeds(`
+            . # . # .
+            . # . # .
+            . . . . .
+            # . . . #
+            . # # # .
+            `)
     }
 })
