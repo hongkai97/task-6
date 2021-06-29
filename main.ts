@@ -3,7 +3,7 @@ basic.forever(function () {
     basic.pause(500)
     if (pins.analogReadPin(AnalogPin.P1) < 500) {
         music.setVolume(127)
-        music.playMelody("C5 B A G F E D C ", 120)
+        soundExpression.sad.play()
         basic.showLeds(`
             . # . # .
             . # . # .
